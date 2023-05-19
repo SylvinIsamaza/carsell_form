@@ -44,8 +44,11 @@ const CarSellForm = () => {
   };
 
   return (
+<>
+<h1 className='mb-5 mt-3'>car sell form</h1>
     <form onSubmit={handleSubmit}>
-      <div className="mb-3">
+    
+      <div className="mb-3 ">
         <label htmlFor="carMake" className="form-label">Car Make:</label>
         <input
           type="text"
@@ -57,8 +60,8 @@ const CarSellForm = () => {
           required
         />
       </div>
-      <div className="mb-3">
-        <label htmlFor="carModel" className="form-label">Car Model:</label>
+      <div className="mb-3 ">
+        <label htmlFor="carModel" >Car Model:</label>
         <input
           type="text"
           className="form-control"
@@ -69,7 +72,7 @@ const CarSellForm = () => {
           required
         />
       </div>
-      <div className="mb-3">
+      <div className="mb-3 ">
         <label htmlFor="year" className="form-label">Year:</label>
         <input
           type="date"
@@ -81,7 +84,7 @@ const CarSellForm = () => {
           required
         />
       </div>
-      <div className="mb-3">
+      <div className="mb-3 ">
         <label htmlFor="mileage" className="form-label">Mileage:</label>
         <input
           type="number"
@@ -93,7 +96,7 @@ const CarSellForm = () => {
           required
         />
       </div>
-      <div className="mb-3">
+      <div className="mb-3 ">
         <label className="form-label">Condition:</label>
         <div className="form-check">
           <input
@@ -148,7 +151,7 @@ const CarSellForm = () => {
           <label htmlFor="poor" className="form-check-label">Poor</label>
         </div>
       </div>
-      <div className="mb-3">
+      <div className="mb-3 ">
         <label className="form-label">Features:</label>
         <div className="form-check">
           <input
@@ -236,7 +239,7 @@ const CarSellForm = () => {
         />
         <span>${formData.priceRange}</span>
       </div>
-      <div className="mb-3">
+      <div className="mb-3  ">
         <label htmlFor="contactNumber" className="form-label">Contact Number:</label>
         <input
           type="text"
@@ -250,6 +253,7 @@ const CarSellForm = () => {
       </div>
       <button type="submit" className="btn btn-primary">Submit</button>
     </form>
+    </>
   );
 };
 
