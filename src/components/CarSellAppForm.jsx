@@ -96,7 +96,7 @@ const CarSellForm = () => {
           required
         />
       </div>
-      <div className="mb-3 ">
+      <div className="mb-3">
         <label className="form-label">Condition:</label>
         <div className="form-check">
           <input
